@@ -1,0 +1,740 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+
+    margin:0;
+   
+
+}
+
+/* Start Home Section  */
+
+/* Start Navbar  */
+.freshbars{
+    background-image:linear-gradient(
+        to right,
+        rgba(0,0,0,0.4),#ffdde1
+    );
+    color: #000;
+}
+
+
+
+.navbar{
+    transition: all 1s;
+}
+.navbar.hiders{
+    
+    display: none;
+
+    transition: all 1s;
+}
+
+
+
+.freshs{
+    letter-spacing: 2px;
+}
+
+.navanis li a{
+    position: relative;
+    transition: all 0.5s;
+}
+
+.navanis li a:hover{
+    font-size: 18px;
+}
+
+
+
+.navanis li a::after{
+    content: '';
+    width:0;
+    height: 5px;
+    background-color: #f3ece0;
+
+    position: absolute;
+    top:100%;
+    left:0;
+    
+    transition: all 0.5s;
+}
+
+.navanis li a:hover::after{
+    width: 50%;
+    transform: translate(100%);
+}
+
+
+.navanis li a::before{
+    content: '';
+    width:0;
+    height: 5px;
+    background-color:#d1afaf;
+
+    position: absolute;
+    top:100%;
+    right:0;
+    
+    transition: all 0.5s;
+}
+
+.navanis li a:hover::before{
+    width: 50%;
+    transform: translate(-100%);
+}
+
+
+/* End Navbar  */
+
+/* Start Header's Body Section  */
+header{
+    height: 100vh;
+    background-image:linear-gradient(
+        to right,
+        rgba(0,0,0,0.2),#ffdde1
+    ), url(../assets/img/new/freshfood.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.banners{
+  
+    width: 52%;
+
+    position: absolute;
+    top:30%;
+    left: 45%;
+
+
+}
+
+.btn{
+    transition: 1s;
+}
+
+.btn:hover{
+    transform: translateY(-10px);
+}
+
+
+
+/* End Header's Body Section  */
+
+/* End Home Section  */
+
+
+/* Start Aboutus Section  */
+.aboutusimgboxs img{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    margin: auto;
+}
+
+.aboutuslorems{
+    text-align: justify;
+}
+
+.aboutusimgboxs.fromlefts{
+    animation-name: myanileft;
+    animation-duration: 2s;
+}
+
+.aboutustexts.fromrights{
+    animation-name: myaniright;
+    animation-duration: 2s;
+}
+
+
+@keyframes myanileft{
+    0%{
+        transform: translate(-40px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+
+@keyframes myaniright{
+    0%{
+        transform: translate(40px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+
+/* End Aboutus Section  */
+
+
+/* Start Mission Section  */
+
+.missioncontainers{
+    background-color: #f4f4f4;
+}
+
+.card{
+    padding: 5px;
+    border: 2px solid #eee;
+}
+.card img{
+    width: 70px;
+}
+
+.card h2{
+    color: tomato;
+    font-weight: bold;
+}
+
+.missions{
+    margin-left: 20px;
+}
+
+.missions h1{
+    font-weight: bold;
+    color: tomato;
+}
+
+.missions p{
+    letter-spacing: 1px;
+    text-align: justify;
+
+}
+
+.card-body p{
+    text-align: justify;
+}
+
+
+.cardbodies{
+    cursor: pointer;
+
+    transition: all 0.5s;
+}
+
+.cardbodies:hover{
+    transform: scale(1.1);
+}
+/* End Mission Section  */
+
+
+/* Start Menu Section  */
+.menubackgrounds{
+    background-image:linear-gradient(
+        to right,
+        rgba(0,0,0,0.2),#ffdde1
+        
+    );
+
+    position: relative;
+}
+
+.cusomizes{
+    position: absolute;
+    bottom: 20px;
+    right:20px;
+}
+
+.mores{
+    position: absolute;
+    bottom: 20px;
+    right:130px;
+}
+
+.menuitemones li,.menuitemtwos li,.menuitemthrees li{
+    cursor: pointer;
+}
+
+.menuitemones li:hover,.menuitemtwos li:hover,.menuitemthrees li:hover{
+    color: tomato;
+    letter-spacing: 2px;
+}
+
+
+.menuitemones.fromlefts li{
+    animation: menufromleft 1s backwards;
+}
+
+.menuitemones.fromlefts li:nth-of-type(1){
+    animation-delay: 0.1s;
+ 
+}
+
+.menuitemones.fromlefts li:nth-of-type(2){
+    animation-delay: 0.2s;
+ 
+}
+
+.menuitemones.fromlefts li:nth-of-type(3){
+    animation-delay: 0.3s;
+ 
+}
+
+.menuitemones.fromlefts li:nth-of-type(4){
+    animation-delay: 0.4s;
+ 
+}
+
+.menuitemones.fromlefts li:nth-of-type(5){
+    animation-delay: 0.5s;
+ 
+}
+
+.menuitemones.fromlefts li:nth-of-type(6){
+    animation-delay: 0.6s;
+ 
+}
+
+.menuitemones.fromlefts li:nth-of-type(7){
+    animation-delay: 0.7s;
+ 
+}
+
+.menuitemones.fromlefts li:nth-of-type(8){
+    animation-delay: 0.8s;
+ 
+}
+
+.menuitemones.fromlefts li:nth-of-type(9){
+    animation-delay: 0.9s;
+ 
+}
+
+.menuitemones.fromlefts li:nth-of-type(10){
+    animation-delay: 1s;
+ 
+}
+
+
+@keyframes menufromleft{
+    0%{
+        transform: translate(-100%);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+
+.menuitemtwos.frombottoms li{
+    animation: menufrombottom 1s backwards;
+}
+
+.menuitemtwos.frombottoms li:nth-of-type(1){
+    animation-delay: 0.1s;
+ 
+}
+
+.menuitemtwos.frombottoms li:nth-of-type(2){
+    animation-delay: 0.2s;
+ 
+}
+
+.menuitemtwos.frombottoms li:nth-of-type(3){
+    animation-delay: 0.3s;
+ 
+}
+
+.menuitemtwos.frombottoms li:nth-of-type(4){
+    animation-delay: 0.4s;
+ 
+}
+
+.menuitemtwos.frombottoms li:nth-of-type(5){
+    animation-delay: 0.5s;
+ 
+}
+
+.menuitemtwos.frombottoms li:nth-of-type(6){
+    animation-delay: 0.6s;
+ 
+}
+
+.menuitemtwos.frombottoms li:nth-of-type(7){
+    animation-delay: 0.7s;
+ 
+}
+
+.menuitemtwos.frombottoms li:nth-of-type(8){
+    animation-delay: 0.8s;
+ 
+}
+
+.menuitemtwos.frombottoms li:nth-of-type(9){
+    animation-delay: 0.9s;
+ 
+}
+
+.menuitemtwos.frombottoms li:nth-of-type(10){
+    animation-delay: 1s;
+ 
+}
+
+
+@keyframes menufrombottom{
+    0%{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+.menuitemthrees.formrights li{
+    animation: menufromright 1s backwards;
+}
+
+
+.menuitemthrees.formrights li:nth-of-type(1){
+    animation-delay: 0.1s;
+ 
+}
+
+.menuitemthrees.formrights li:nth-of-type(2){
+    animation-delay: 0.2s;
+ 
+}
+
+.menuitemthrees.formrights li:nth-of-type(3){
+    animation-delay: 0.3s;
+ 
+}
+
+.menuitemthrees.formrights li:nth-of-type(4){
+    animation-delay: 0.4s;
+ 
+}
+
+.menuitemthrees.formrights li:nth-of-type(5){
+    animation-delay: 0.5s;
+ 
+}
+
+.menuitemthrees.formrights li:nth-of-type(6){
+    animation-delay: 0.6s;
+ 
+}
+
+.menuitemthrees.formrights li:nth-of-type(7){
+    animation-delay: 0.7s;
+ 
+}
+
+.menuitemthrees.formrights li:nth-of-type(8){
+    animation-delay: 0.8s;
+ 
+}
+
+.menuitemthrees.formrights li:nth-of-type(9){
+    animation-delay: 0.9s;
+ 
+}
+
+.menuitemthrees.formrights li:nth-of-type(10){
+    animation-delay: 1s;
+ 
+}
+
+@keyframes menufromright{
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+/* End Menu Section  */
+
+
+/* Start Gallery Section  */
+
+.gallerys{
+    /* transform: translate(-200px); */
+
+    transition: all 1s;
+}
+
+
+.gallerys img{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.4);
+
+    object-fit: cover;
+}
+
+.gallerycustomize{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+/* End Gallery Section  */
+
+
+/* Start Corporation  */
+
+
+.carouselimgs{
+    width: 100vw;
+    height: 80vh;
+    border-radius: 10px;
+    
+    object-fit: cover;
+}
+
+.carouselitems{
+    position: relative;
+}
+
+.carouseltexts{
+    width: 50%;
+
+    position: absolute;
+    top:10%;
+    left:45%;
+}
+
+
+.carouseltexts p{
+    text-align: justify;
+
+}
+
+.remarks{
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.4);
+}
+
+.remarks h5{
+    letter-spacing: 3px;
+    color: #000;
+}
+
+/* End Corporation */
+
+
+
+/* Start Contact Section  */
+
+.contacts{
+    position: relative;
+}
+
+.contacts::before{
+  content: '';
+  width: 400px;
+  height: 400px;
+  background-color: #eacda3;
+  border-radius: 50%;
+
+  opacity: 0.8;
+  z-index: -1;
+
+  position: absolute;
+  top:0;
+  left:0;
+
+  transform:translate(-50%,-50%);
+}
+
+
+
+
+
+.form-group{
+    margin: 70px 0;
+}
+
+.form-control::placeholder{
+    color:tomato;
+    letter-spacing: 2px;
+}
+
+.form-control:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+
+.form-group label{
+    display: block;
+
+    color: tomato;
+    margin-left: 13px;
+    margin-top: -65px;
+    letter-spacing: 3px;
+
+    opacity: 1;
+
+    transition: all 0.5s;
+}
+
+.form-control:placeholder-shown+ label{
+    opacity: 0;
+    transform: translate(20px,20px);
+}
+/* End Contact Section  */
+
+
+/* Start Footer Section  */
+.footerimages img{
+    width: 100px;
+    height: 50px;
+    box-shadow: 2px 3px 10px rgba(0,0,0,0.7);
+    border-radius: 5px;
+    margin: 3px;
+    object-fit: cover;
+}
+
+
+.footeruls{
+    display: flex; 
+    margin:0;
+    padding: 0;
+
+    justify-content: center;
+}
+
+.footeruls li{
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.footeruls li a{
+    
+    color: #fff;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.4s;
+    
+}
+
+.footeruls li:hover a{
+    color: red;
+}
+
+
+.footerimages.footrights img{
+    animation: footerimgs 2s backwards;
+}
+
+
+.footerimages.footerimages img:nth-of-type(1){
+    animation-delay: 0.3s;
+}
+
+.footerimages.footerimages img:nth-of-type(2){
+    animation-delay: 0.6s;
+}
+
+.footerimages.footerimages img:nth-of-type(3){
+    animation-delay: 0.9s;
+}
+
+
+.footerimages.footerimages img:nth-of-type(4){
+    animation-delay: 0.4s;
+}
+
+.footerimages.footerimages img:nth-of-type(5){
+    animation-delay: 0.8s;
+}
+
+.footerimages.footerimages img:nth-of-type(6){
+    animation-delay: 1.2s;
+}
+
+
+.footerimages.footerimages img:nth-of-type(7){
+    animation-delay: 0.5s;
+}
+
+.footerimages.footerimages img:nth-of-type(8){
+    animation-delay: 1s;
+}
+
+.footerimages.footerimages img:nth-of-type(9){
+    animation-delay: 1.5s;
+}
+
+
+
+@keyframes footerimgs{
+    0%{
+        transform: translate(100%);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translate(0%);
+        opacity: 1;
+    }
+}
+/* End Footer Section  */
+
+
+
+
+
+@media(max-width:600px){
+    .banners{
+        width: 60%;
+        top:30%;
+        left:30%;
+        margin-right: 20px;
+    }
+
+    .banners h1{
+        font-size: 20px;
+    }
+
+    .banners p{
+        text-align: justify;
+    }
+
+    .carouseltexts{
+        width: 100%;
+        left: 0;
+
+        padding: 10px;
+    }
+
+    
+
+    .footeruls li{
+        margin: 0 10px;
+    }
+
+
+    .footeruls li a{
+        font-size: 8px;
+    }
+
+    
+}
