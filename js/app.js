@@ -4,26 +4,26 @@
 
 
 // Start navbar
-// const navbar = document.querySelector('.navbar');
-// // console.log(navbar);
+const navbar = document.querySelector('.navbar');
+// console.log(navbar);
 
-// const toogglerbtns = document.querySelector('.toogglerbtns');
-// // console.log(toogglerbtns);
+const toogglerbtns = document.querySelector('.toogglerbtns');
+// console.log(toogglerbtns);
 
 
 
-// window.addEventListener('scroll',()=>{
-//     const scrolly = window.scrollY;
-//     // console.log(scrolly);
+window.addEventListener('scroll',()=>{
+    const scrolly = window.scrollY;
+    // console.log(scrolly);
 
-//     if(scrolly >= 500){
-//         navbar.classList.add('hiders');
+    if(scrolly >= 500){
+        navbar.classList.add('hiders');
         
-//     }else{
-//         navbar.classList.remove('hiders');
+    }else{
+        navbar.classList.remove('hiders');
 
-//     }
-// });
+    }
+});
 // End Navbar
 
 
