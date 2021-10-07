@@ -5,8 +5,8 @@
 body{
     font-family: sans-serif;
 
-    margin:0;
-   
+    margin:auto;
+    overflow-x: hidden;
 
 }
 
