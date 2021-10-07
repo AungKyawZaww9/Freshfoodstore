@@ -10,13 +10,29 @@ const navbar = document.querySelector('.navbar');
 const toogglerbtns = document.querySelector('.toogglerbtns');
 // console.log(toogglerbtns);
 
+const togglers = document.querySelector('.togglers');
+
+
+togglers.addEventListener('click',()=>{
+    togglers.classList.toggle('fivesixs');
+});
+
+navbar.addEventListener('mouseenter',function(){
+    navbar.classList.add('opacity');
+});
+
+
+navbar.addEventListener('mouseleave',function(){
+    navbar.classList.remove('opacity');
+});
+
 
 
 window.addEventListener('scroll',()=>{
     const scrolly = window.scrollY;
     // console.log(scrolly);
 
-    if(scrolly >= 500){
+    if(scrolly > 400){
         navbar.classList.add('hiders');
         
     }else{
